@@ -1,7 +1,6 @@
 How to build:
 
 In cmd
-
 gradle clean
 gradle shadowJar
 
@@ -14,29 +13,4 @@ java -jar ClassicCipherDecipherer
 Requirements:
 Java 1.8
 Gradle 4+
-
-New files:
-model/ciphers/
-TestSuiteController.java
-Baconian.java
-NewSimpleSUb.java
-Nihilist.java
-OneTimePad.java
-Polybius.java
-PrimeCipher.java
-Vigenere.java
-
-model/util
-GeneticAlg.java
-SimAnneal.java
-SubSearchAlg.java
-
-
-Modified files:
-SimpleSubstitution.java
-Encryption.java
-Decryption.java
-Msgstats.java
-Subkey.java
-
 
