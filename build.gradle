@@ -1,0 +1,37 @@
+
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.0.0'
+}
+
+group 'br98'
+version '2.0'
+
+sourceCompatibility = 1.8
+
+shadowJar {
+    baseName = 'ClassicCipherDecipherer'
+    classifier = null
+    version = null
+}
+
+jar {
+    manifest{
+        attributes  'Implementation-Title' : 'Classic Cipher Decipherer',
+                'Implementation-Version' : version,
+                'Main-Class' : 'Main',
+                'Built-Date' : new Date(),
+                'Built-JDK' : System.getProperty('java.version'),
+                'Built-Gradle' : gradle.gradleVersion
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.javatuples/javatuples
+    compile group: 'org.javatuples', name: 'javatuples', version: '1.2'
+}
