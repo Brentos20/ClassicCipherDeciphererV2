@@ -11,7 +11,7 @@ gradle shadowJar
 How to run:
 in the build/libs folder use command prompt
 
-java -jar ClassicCipherDecipherer
+java -jar ClassicCipherDecipherer.jar
 
 
 Requirements:
